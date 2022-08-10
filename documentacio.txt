@@ -1,0 +1,25 @@
+Bienvenidos a Fotored's API
+
+
+POST http://localhost:3000/api/usuarios/
+{
+    "nombre": "Cristobal waifu",
+    "mensajes": ["Sería imposible sin el poder de la amistad", "Esto esta facil", "Soy más de series japonesas"],
+    "conectado": false,
+    "seguidores": 110,
+    "siguiendo": 482,
+    "puntuacion": 97
+}                                                                 - Crear un nuevo usuario
+
+DELETE http://localhost:3000/api/usuarios/3                        - Eliminar un usuario 
+
+PATCH http://localhost:3000/api/usuarios/mensajes/1
+{"mensajes":"Papas arrugadas es mi comida favorita"}                  -	Añadir nuevos mensajes al usuario
+
+PUT http://localhost:3000/api/usuarios/conexion/4   
+{"conectado": false}                                       -	Cambiar el estado de conexión del usuario
+
+PUT http://localhost:3000/api/usuarios/puntuacion/3 
+  {"puntuacion": 999}                                        -	Modificar la puntuación del usuario
+
+linea 122 (validacion booleana) -verificamos que el valor pasado sea un booleano y lo hacemos mas restrictivo

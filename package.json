@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "prueba9",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Joi",
+    "pruebas"
+  ],
+  "author": "NahuM",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "helmet": "^5.1.1",
+    "joi": "^17.6.0",
+    "morgan": "^1.10.0",
+    "start": "^5.1.0"
+  }
+}
